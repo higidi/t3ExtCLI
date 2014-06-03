@@ -1,0 +1,16 @@
+{
+    "name": "higidi/t3extcli",
+    "description": "TYPO3 Extension Manager CLI Utility",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Hürtgen",
+            "email": "daniel@higidi.de"
+        }
+    ],
+    "require": {},
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-0": { "Higidi\\T3ExtCli": "src/" }
+    }
+}
