@@ -8,7 +8,9 @@
             "email": "daniel@higidi.de"
         }
     ],
-    "require": {},
+    "require": {
+        "cilex/cilex": "1.*"
+    },
     "minimum-stability": "stable",
     "autoload": {
         "psr-0": { "Higidi\\T3ExtCli": "src/" }
