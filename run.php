@@ -8,7 +8,7 @@ define('APP_NAME', 'T3ExtCLI');
 define('APP_VERSION', '1.0.0-dev');
 
 // create application
-$app = new \Cilex\Application(APP_NAME, APP_VERSION);
+$app = new \Higidi\T3ExtCli\Application(APP_NAME, APP_VERSION);
 
 // TODO do stuff here :-)
 
