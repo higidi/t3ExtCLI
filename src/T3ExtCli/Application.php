@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Higidi\T3ExtCli;
+namespace T3ExtCli;
 
 use Cilex\Application as BaseApplication;
 
