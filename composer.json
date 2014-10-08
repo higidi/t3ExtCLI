@@ -9,6 +9,7 @@
         }
     ],
     "require": {
+        "php": ">=5.3.3",
         "cilex/cilex": "1.*",
         "silex/silex": "~1.2"
     },
