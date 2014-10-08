@@ -1,4 +1,4 @@
-composer.lock
-
-# Vendor directories
-vendor/*
+/composer.lock
+/build
+/vendor
+/phpunit.xml
