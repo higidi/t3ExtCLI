@@ -1,9 +1,4 @@
 composer.lock
 
-cache/*
-!cache/.gitkeep
-tmp/*
-!tmp/.gitkeep
-
 # Vendor directories
 vendor/*
