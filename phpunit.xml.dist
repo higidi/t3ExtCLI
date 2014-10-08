@@ -11,8 +11,8 @@
          bootstrap="vendor/autoload.php"
         >
     <testsuites>
-        <testsuite name="T3ExtCLI Test Suite">
-            <directory>./tests/src/T3ExtCli/</directory>
+        <testsuite name="Project Test Suite">
+            <directory>./tests/src/</directory>
         </testsuite>
     </testsuites>
     <filter>
