@@ -10,7 +10,7 @@
     ],
     "require": {
         "cilex/cilex": "1.*",
-        "silex/silex": "1.*"
+        "silex/silex": "~1.2"
     },
     "minimum-stability": "stable",
     "autoload": {
