@@ -1,6 +1,8 @@
 <?php
 
-class ApplicationTest extends PHPUnit_Framework_TestCase
+namespace T3ExtCli\Test;
+
+class ApplicationTest extends \PHPUnit_Framework_TestCase
 {
 
     public function testNotImplemented()

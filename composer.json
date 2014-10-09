@@ -19,6 +19,11 @@
             "T3ExtCli": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-0": {
+            "T3ExtCli\\Test": "tests/src/"
+        }
+    },
     "require-dev": {
         "phpunit/phpunit": "~4.3",
         "satooshi/php-coveralls": "dev-master"
