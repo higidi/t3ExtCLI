@@ -22,4 +22,20 @@ use Cilex\Application as BaseApplication;
  */
 class Application extends BaseApplication
 {
+
+    /**
+     * @var string
+     */
+    const VERSION = '1.0.0-dev';
+
+    /**
+     * Class constructor.
+     *
+     * @return Application
+     */
+    public function __construct()
+    {
+        parent::__construct('T3ExtCli', static::VERSION);
+    }
+
 }
