@@ -5,7 +5,8 @@
     "authors": [
         {
             "name": "Daniel Hürtgen",
-            "email": "daniel@higidi.de"
+            "email": "daniel@higidi.de",
+            "homepage": "http://www.higidi.de"
         }
     ],
     "require": {
