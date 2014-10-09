@@ -31,5 +31,10 @@
     },
     "bin": [
         "bin/T3ExtCli"
-    ]
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-development": "1.0.x-dev"
+        }
+    }
 }
