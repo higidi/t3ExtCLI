@@ -41,6 +41,17 @@ class Application extends BaseApplication
     public function __construct()
     {
         parent::__construct(static::NAME, static::VERSION);
+        $this->registerCommands();
+    }
+
+    /**
+     * Register application commands.
+     *
+     * @return void
+     */
+    protected function registerCommands()
+    {
+        $this->command(new Command\ListCommand());
     }
 
 }
