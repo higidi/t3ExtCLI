@@ -26,6 +26,11 @@ class Application extends BaseApplication
     /**
      * @var string
      */
+    const NAME = 'T3ExtCli';
+
+    /**
+     * @var string
+     */
     const VERSION = '1.0.0-dev';
 
     /**
@@ -35,7 +40,7 @@ class Application extends BaseApplication
      */
     public function __construct()
     {
-        parent::__construct('T3ExtCli', static::VERSION);
+        parent::__construct(static::NAME, static::VERSION);
     }
 
 }
