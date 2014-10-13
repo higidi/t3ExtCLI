@@ -53,6 +53,7 @@ class Application extends BaseApplication
     {
         $this->command(new Command\ListCommand());
         $this->command(new Command\UploadCommand());
+        $this->command(new Command\DownloadCommand());
     }
 
 }
