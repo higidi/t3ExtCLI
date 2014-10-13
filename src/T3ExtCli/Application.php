@@ -52,6 +52,7 @@ class Application extends BaseApplication
     protected function registerCommands()
     {
         $this->command(new Command\ListCommand());
+        $this->command(new Command\UploadCommand());
     }
 
 }
