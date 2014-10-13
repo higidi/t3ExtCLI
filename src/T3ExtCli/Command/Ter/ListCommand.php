@@ -11,7 +11,6 @@
 
 namespace T3ExtCli\Command\Ter;
 
-use Cilex\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
