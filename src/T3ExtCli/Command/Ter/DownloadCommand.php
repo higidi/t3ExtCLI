@@ -36,6 +36,8 @@ class DownloadCommand extends Command
         $this
             ->setName('ter:download')
             ->setDescription('Download extension');
+
+        parent::configure();
     }
 
     /**

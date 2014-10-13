@@ -36,6 +36,8 @@ class UploadCommand extends Command
         $this
             ->setName('ter:upload')
             ->setDescription('Upload extension');
+
+        parent::configure();
     }
 
     /**

@@ -36,6 +36,8 @@ class ListCommand extends Command
         $this
             ->setName('ter:list')
             ->setDescription('List extensions');
+
+        parent::configure();
     }
 
     /**
