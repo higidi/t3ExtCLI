@@ -9,20 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli\Command;
+namespace T3ExtCli\Command\Ter;
 
 use Cilex\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Typo3 list extensions command.
+ * Typo3 upload extension command.
  *
  * @author Daniel Hürtgen <daniel@higidi.com>
  *
  * @api
  */
-class ListCommand extends Command
+class UploadCommand extends Command
 {
 
     /**
@@ -35,12 +35,12 @@ class ListCommand extends Command
     protected function configure()
     {
         $this
-            ->setName('ter:list')
-            ->setDescription('List extensions');
+            ->setName('ter:upload')
+            ->setDescription('Upload extension');
     }
 
     /**
-     * Executes the list command.
+     * Executes the upload command.
      *
      * @param InputInterface $input An InputInterface instance
      * @param OutputInterface $output An OutputInterface instance

@@ -9,20 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli\Command;
+namespace T3ExtCli\Command\Ter;
 
 use Cilex\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Typo3 download extension command.
+ * Typo3 list extensions command.
  *
  * @author Daniel Hürtgen <daniel@higidi.com>
  *
  * @api
  */
-class DownloadCommand extends Command
+class ListCommand extends Command
 {
 
     /**
@@ -35,12 +35,12 @@ class DownloadCommand extends Command
     protected function configure()
     {
         $this
-            ->setName('ter:download')
-            ->setDescription('Download extension');
+            ->setName('ter:list')
+            ->setDescription('List extensions');
     }
 
     /**
-     * Executes the download command.
+     * Executes the list command.
      *
      * @param InputInterface $input An InputInterface instance
      * @param OutputInterface $output An OutputInterface instance

@@ -9,20 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli\Command;
+namespace T3ExtCli\Command\Ter;
 
 use Cilex\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Typo3 upload extension command.
+ * Typo3 download extension command.
  *
  * @author Daniel Hürtgen <daniel@higidi.com>
  *
  * @api
  */
-class UploadCommand extends Command
+class DownloadCommand extends Command
 {
 
     /**
@@ -35,12 +35,12 @@ class UploadCommand extends Command
     protected function configure()
     {
         $this
-            ->setName('ter:upload')
-            ->setDescription('Upload extension');
+            ->setName('ter:download')
+            ->setDescription('Download extension');
     }
 
     /**
-     * Executes the upload command.
+     * Executes the download command.
      *
      * @param InputInterface $input An InputInterface instance
      * @param OutputInterface $output An OutputInterface instance
