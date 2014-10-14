@@ -21,7 +21,7 @@ use Symfony\Component\Console\Output\OutputInterface;
  *
  * @api
  */
-class UploadCommand extends Command
+class UploadCommand extends AbstractCommand
 {
 
     /**

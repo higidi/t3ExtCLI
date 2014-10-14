@@ -21,7 +21,7 @@ use Symfony\Component\Console\Output\OutputInterface;
  *
  * @api
  */
-class ListCommand extends Command
+class ListCommand extends AbstractCommand
 {
 
     /**

@@ -18,7 +18,7 @@ use Cilex\Command\Command as BaseCommand;
  *
  * @author Daniel Hürtgen <daniel@higidi.com>
  */
-class Command extends BaseCommand
+abstract class AbstractCommand extends BaseCommand
 {
 
     /**

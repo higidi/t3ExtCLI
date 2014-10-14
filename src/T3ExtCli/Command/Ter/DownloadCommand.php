@@ -21,7 +21,7 @@ use Symfony\Component\Console\Output\OutputInterface;
  *
  * @api
  */
-class DownloadCommand extends Command
+class DownloadCommand extends AbstractCommand
 {
 
     /**
