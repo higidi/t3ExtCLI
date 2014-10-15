@@ -34,14 +34,27 @@ class Repository
     protected $mirrorListUrl;
 
     /**
+     * Repository wsdl url.
+     *
+     * @var string
+     */
+    protected $wsdlUrl;
+
+    /**
+     * Class constructor.
+     *
      * @param string $name The repository name.
      * @param string $mirrorListUrl The repository mirror list url.
+     * @param null|string $wsdlUrl The repository wsdl url.
      * @return Repository
      */
-    public function __construct($name, $mirrorListUrl)
+    public function __construct($name, $mirrorListUrl, $wsdlUrl = null)
     {
         $this->name = $name;
         $this->mirrorListUrl = $mirrorListUrl;
+        if (null !== $wsdlUrl) {
+            $this->wsdlUrl = $wsdlUrl;
+        }
     }
 
     /**
@@ -62,6 +75,16 @@ class Repository
     public function getMirrorListUrl()
     {
         return $this->mirrorListUrl;
+    }
+
+    /**
+     * Gets the repository wsdl url.
+     *
+     * @return string
+     */
+    public function getWsdlUrl()
+    {
+        return $this->wsdlUrl;
     }
 
 }

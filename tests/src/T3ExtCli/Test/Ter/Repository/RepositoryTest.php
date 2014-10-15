@@ -28,5 +28,11 @@ class RepositoryTest extends \PHPUnit_Framework_TestCase
         $this->assertSame('http://www.test.org/mirrors.xml', $repository->getMirrorListUrl());
     }
 
+    public function testConstructorWillSetWsdlUrlAsExpected()
+    {
+        $repository = new Repository('' , '', 'http://www.test.org/wsdl');
+        $this->assertSame('http://www.test.org/wsdl', $repository->getWsdlUrl());
+    }
+
 }
  
