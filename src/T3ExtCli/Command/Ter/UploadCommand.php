@@ -3,7 +3,7 @@
 /*
  * This file is part of the Higidi/T3ExtCLI package.
  *
- * (c) Daniel Hürtgen <daniel@higidi.com>
+ * (c) Daniel Hürtgen <daniel@higidi.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -17,7 +17,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 /**
  * Typo3 upload extension command.
  *
- * @author Daniel Hürtgen <daniel@higidi.com>
+ * @author Daniel Hürtgen <daniel@higidi.de>
  *
  * @api
  */
