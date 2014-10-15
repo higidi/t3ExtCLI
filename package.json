@@ -1,0 +1,21 @@
+{
+    "name": "T3ExtCli",
+    "description": "TYPO3 Extension Manager CLI Utility",
+    "keywords": [
+        "typo3"
+    ],
+    "license": "MIT",
+    "author": {
+        "name": "Daniel Hürtgen",
+        "email": "daniel@higidi.de",
+        "url": "http://www.higidi.de"
+    },
+    "repository": "https://github.com/higidi/t3ExtCLI.git",
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "grunt-cli": "~0.1"
+    }
+}

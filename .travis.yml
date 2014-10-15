@@ -5,6 +5,9 @@ php:
   - "5.4"
   - "5.5"
 
+install:
+  - npm install
+
 before_script:
   - curl -s http://getcomposer.org/installer | php
   - php composer.phar install --dev --prefer-source
