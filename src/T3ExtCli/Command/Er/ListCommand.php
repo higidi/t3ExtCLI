@@ -9,19 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli\Command\Ter;
+namespace T3ExtCli\Command\Er;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Typo3 download extension command.
+ * Typo3 list extensions command.
  *
  * @author Daniel Hürtgen <daniel@higidi.de>
  *
  * @api
  */
-class DownloadCommand extends AbstractCommand
+class ListCommand extends AbstractCommand
 {
 
     /**
@@ -34,14 +34,14 @@ class DownloadCommand extends AbstractCommand
     protected function configure()
     {
         $this
-            ->setName('ter:download')
-            ->setDescription('Download extension');
+            ->setName('er:list')
+            ->setDescription('List extensions');
 
         parent::configure();
     }
 
     /**
-     * Executes the download command.
+     * Executes the list command.
      *
      * @param InputInterface $input An InputInterface instance
      * @param OutputInterface $output An OutputInterface instance

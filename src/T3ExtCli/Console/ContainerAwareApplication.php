@@ -13,9 +13,9 @@ namespace T3ExtCli\Console;
 
 use Cilex\Provider\Console\ContainerAwareApplication as BaseContainerAwareApplication;
 use Symfony\Component\Console\Command\Command;
-use T3ExtCli\Command\Ter\DownloadCommand;
-use T3ExtCli\Command\Ter\ListCommand;
-use T3ExtCli\Command\Ter\UploadCommand;
+use T3ExtCli\Command\Er\DownloadCommand;
+use T3ExtCli\Command\Er\ListCommand;
+use T3ExtCli\Command\Er\UploadCommand;
 
 /**
  * The T3ExtCLI console application class.

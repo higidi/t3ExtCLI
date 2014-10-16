@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli\Command\Ter;
+namespace T3ExtCli\Command\Er;
 
 use Cilex\Command\Command as BaseCommand;
 

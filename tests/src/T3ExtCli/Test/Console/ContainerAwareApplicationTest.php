@@ -28,17 +28,17 @@ class ContainerAwareApplicationTest extends \PHPUnit_Framework_TestCase
 
     public function testIfListCommandWillBeRegisteredWithApplication()
     {
-        $this->assertInstanceOf('T3ExtCli\Command\Ter\ListCommand', $this->application->get('ter:list'));
+        $this->assertInstanceOf('T3ExtCli\Command\Er\ListCommand', $this->application->get('er:list'));
     }
 
     public function testIfDownloadCommandWillBeRegisteredWithApplication()
     {
-        $this->assertInstanceOf('T3ExtCli\Command\Ter\DownloadCommand', $this->application->get('ter:download'));
+        $this->assertInstanceOf('T3ExtCli\Command\Er\DownloadCommand', $this->application->get('er:download'));
     }
 
     public function testIfUploadCommandWillBeRegisteredWithApplication()
     {
-        $this->assertInstanceOf('T3ExtCli\Command\Ter\UploadCommand', $this->application->get('ter:upload'));
+        $this->assertInstanceOf('T3ExtCli\Command\Er\UploadCommand', $this->application->get('er:upload'));
     }
 
 }
