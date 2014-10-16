@@ -31,7 +31,7 @@
         "php": ">=5.3.7",
         "silex/silex": "~1.2",
         "cilex/cilex": "~1.1",
-        "typo3/cms": "~6.2"
+        "typo3/cms": "6.2.5"
     },
     "minimum-stability": "stable",
     "autoload": {
