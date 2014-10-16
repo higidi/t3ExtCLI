@@ -36,4 +36,14 @@ class ApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertSame(Application::VERSION, $this->application['console.version']);
     }
 
+    public function testApplicationClassWillBeApplied()
+    {
+        $this->assertSame('T3ExtCli\Console\ContainerAwareApplication', $this->application['console.class']);
+    }
+
+    public function testApplicationWillBeInstanceOfT3ExtCliConsoleApplication()
+    {
+        $this->assertInstanceOf('T3ExtCli\Console\ContainerAwareApplication', $this->application['console']);
+    }
+
 }

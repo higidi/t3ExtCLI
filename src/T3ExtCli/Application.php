@@ -40,20 +40,20 @@ class Application extends BaseApplication
      */
     public function __construct()
     {
-        parent::__construct(static::NAME, static::VERSION);
-        $this->registerCommands();
+        $values = $this->getDefaultValues();
+        parent::__construct(static::NAME, static::VERSION, $values);
     }
 
     /**
-     * Register application commands.
+     * Returns array with default values.
      *
-     * @return void
+     * @return array
      */
-    protected function registerCommands()
+    protected function getDefaultValues()
     {
-        $this->command(new Command\Ter\ListCommand());
-        $this->command(new Command\Ter\UploadCommand());
-        $this->command(new Command\Ter\DownloadCommand());
+        return [
+            'console.class' => 'T3ExtCli\Console\ContainerAwareApplication',
+        ];
     }
 
 }
