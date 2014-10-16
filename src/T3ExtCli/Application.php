@@ -51,9 +51,9 @@ class Application extends BaseApplication
      */
     protected function getDefaultValues()
     {
-        return [
+        return array(
             'console.class' => 'T3ExtCli\Console\ContainerAwareApplication',
-        ];
+        );
     }
 
 }
