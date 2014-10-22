@@ -13,9 +13,9 @@ namespace T3ExtCli\Console;
 
 use Cilex\Provider\Console\ContainerAwareApplication as BaseContainerAwareApplication;
 use Symfony\Component\Console\Command\Command;
-use T3ExtCli\Command\Er\DownloadCommand;
 use T3ExtCli\Command\Er\ListCommand;
 use T3ExtCli\Command\Er\ShowCommand;
+use T3ExtCli\Command\Er\DownloadCommand;
 use T3ExtCli\Command\Er\UploadCommand;
 
 /**
