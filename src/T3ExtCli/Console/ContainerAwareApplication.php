@@ -15,6 +15,7 @@ use Cilex\Provider\Console\ContainerAwareApplication as BaseContainerAwareApplic
 use Symfony\Component\Console\Command\Command;
 use T3ExtCli\Command\Er\DownloadCommand;
 use T3ExtCli\Command\Er\ListCommand;
+use T3ExtCli\Command\Er\ShowCommand;
 use T3ExtCli\Command\Er\UploadCommand;
 
 /**
@@ -35,6 +36,7 @@ class ContainerAwareApplication extends BaseContainerAwareApplication
         $commands = parent::getDefaultCommands();
 
         $commands[] = new ListCommand();
+        $commands[] = new ShowCommand();
         $commands[] = new DownloadCommand();
         $commands[] = new UploadCommand();
 
