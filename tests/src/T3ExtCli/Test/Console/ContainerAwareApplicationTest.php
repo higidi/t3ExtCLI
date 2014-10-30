@@ -46,4 +46,9 @@ class ContainerAwareApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf('T3ExtCli\Command\Er\UploadCommand', $this->application->get('er:upload'));
     }
 
+    public function testIfConfigFileDefaultOptionWillBeRegisteredWithApplication()
+    {
+        $this->assertTrue($this->application->getDefinition()->hasOption('config-file'));
+    }
+
 }

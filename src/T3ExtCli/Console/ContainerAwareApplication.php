@@ -13,6 +13,7 @@ namespace T3ExtCli\Console;
 
 use Cilex\Provider\Console\ContainerAwareApplication as BaseContainerAwareApplication;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputOption;
 use T3ExtCli\Command\Er\ListCommand;
 use T3ExtCli\Command\Er\ShowCommand;
 use T3ExtCli\Command\Er\DownloadCommand;
@@ -41,6 +42,19 @@ class ContainerAwareApplication extends BaseContainerAwareApplication
         $commands[] = new UploadCommand();
 
         return $commands;
+    }
+
+    /**
+     * Gets the default input definition.
+     *
+     * @return InputDefinition An InputDefinition instance
+     */
+    protected function getDefaultInputDefinition()
+    {
+        $inputDefinition = parent::getDefaultInputDefinition();
+        $inputDefinition->addOption(new InputOption('--config-file', '-c', InputOption::VALUE_REQUIRED, 'If specified, use given config file instead of the default one.'));
+
+        return $inputDefinition;
     }
 
 }
