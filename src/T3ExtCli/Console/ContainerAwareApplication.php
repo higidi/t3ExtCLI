@@ -14,6 +14,7 @@ namespace T3ExtCli\Console;
 use Cilex\Provider\Console\ContainerAwareApplication as BaseContainerAwareApplication;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputOption;
+use T3ExtCli\Command\ConfigCommand;
 use T3ExtCli\Command\Er\ListCommand;
 use T3ExtCli\Command\Er\ShowCommand;
 use T3ExtCli\Command\Er\DownloadCommand;
@@ -35,6 +36,8 @@ class ContainerAwareApplication extends BaseContainerAwareApplication
     protected function getDefaultCommands()
     {
         $commands = parent::getDefaultCommands();
+
+        $commands[] = new ConfigCommand();
 
         $commands[] = new ListCommand();
         $commands[] = new ShowCommand();
