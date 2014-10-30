@@ -1,7 +1,9 @@
 {
     "name": "higidi/t3extcli",
     "description": "TYPO3 Extension Manager CLI Utility",
-    "keywords": ["typo3"],
+    "keywords": [
+        "typo3"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -22,7 +24,9 @@
                     "reference": "6.2.5"
                 },
                 "autoload": {
-                    "classmap": ["typo3/"]
+                    "classmap": [
+                        "typo3/"
+                    ]
                 }
             }
         }
