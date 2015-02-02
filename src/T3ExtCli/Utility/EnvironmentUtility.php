@@ -26,28 +26,15 @@ class EnvironmentUtility
      */
     public static function determineHomeDirectory()
     {
-        if (defined('PHP_WINDOWS_VERSION_MAJOR') && static::getEnvironmentVariable('APPDATA')) {
-            return strtr(static::getEnvironmentVariable('APPDATA'), '\\', '/');
+        if (defined('PHP_WINDOWS_VERSION_MAJOR') && getEnv('APPDATA')) {
+            return strtr(getenv('APPDATA'), '\\', '/');
         } else {
-            if (static::getEnvironmentVariable('HOME')) {
-                return rtrim(static::getEnvironmentVariable('HOME'), '/');
+            if (getenv('HOME')) {
+                return rtrim(getenv('HOME'), '/');
             }
         }
 
         return null;
-    }
-
-    /**
-     * Gets an environment variable value.
-     * (Wrapper method for optimal unit testing)
-     *
-     * @param string $name The environment varialbe name.
-     * @return string The value of the environment variable.
-     * @codeCoverageIgnore
-     */
-    protected static function getEnvironmentVariable($name)
-    {
-        return getenv($name);
     }
 
 }
