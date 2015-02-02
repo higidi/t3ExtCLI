@@ -26,7 +26,7 @@ class EnvironmentUtility
      */
     public static function determineHomeDirectory()
     {
-        if (defined('PHP_WINDOWS_VERSION_MAJOR') && getEnv('APPDATA')) {
+        if (defined('PHP_WINDOWS_VERSION_MAJOR') && getenv('APPDATA')) {
             return strtr(getenv('APPDATA'), '\\', '/');
         } else {
             if (getenv('HOME')) {
