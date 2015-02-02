@@ -23,6 +23,7 @@ class EnvironmentUtility
      * Determine the current home directory by the given environment vars.
      *
      * @return null|string Null or the path of the home directory.
+     * @codeCoverageIgnore
      */
     public static function determineHomeDirectory()
     {
