@@ -11,7 +11,8 @@
 
 namespace T3ExtCli\Test\Command\Ter;
 
-class DownloadCommandTest extends \PHPUnit_Framework_TestCase {
+class DownloadCommandTest extends \PHPUnit_Framework_TestCase
+{
 
     public function testNotImplementedYet()
     {

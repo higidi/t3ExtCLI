@@ -11,7 +11,8 @@
 
 namespace T3ExtCli\Test\Command;
 
-class ConfigCommandTest extends \PHPUnit_Framework_TestCase {
+class ConfigCommandTest extends \PHPUnit_Framework_TestCase
+{
 
     public function testNotImplementedYet()
     {

@@ -11,7 +11,8 @@
 
 namespace T3ExtCli\Test\Command\Ter;
 
-class ListCommandTest extends \PHPUnit_Framework_TestCase {
+class ListCommandTest extends \PHPUnit_Framework_TestCase
+{
 
     public function testNotImplementedYet()
     {
