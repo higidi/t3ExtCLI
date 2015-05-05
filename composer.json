@@ -17,11 +17,11 @@
             "type": "package",
             "package": {
                 "name": "typo3/cms",
-                "version": "6.2.5",
+                "version": "6.2.12",
                 "source": {
                     "url": "http://git.typo3.org/Packages/TYPO3.CMS.git",
                     "type": "git",
-                    "reference": "6.2.5"
+                    "reference": "6.2.12"
                 },
                 "autoload": {
                     "classmap": [
@@ -35,7 +35,7 @@
         "php": ">=5.3.7",
         "silex/silex": "~1.2",
         "cilex/cilex": "~1.1",
-        "typo3/cms": "6.2.5"
+        "typo3/cms": "6.2.12"
     },
     "minimum-stability": "stable",
     "autoload": {
