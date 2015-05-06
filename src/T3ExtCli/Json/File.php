@@ -47,4 +47,14 @@ class File
         return $this->path;
     }
 
+    /**
+     * Checks whether json file exists.
+     *
+     * @return bool True if json file exists, otherwise false.
+     */
+    public function exists()
+    {
+        return is_file($this->path);
+    }
+
 }

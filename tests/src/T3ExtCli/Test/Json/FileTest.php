@@ -17,6 +17,7 @@ class FileTest extends \PHPUnit_Framework_TestCase
 {
 
     const VIRTUAL_JSON_FILE_PATH = '/tmp/path/not/exists.json';
+    const REAL_JSON_FILE_PATH = '/tmp/php-test-file.json';
 
     /**
      * @var File
@@ -25,12 +26,46 @@ class FileTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->file = new File(self::VIRTUAL_JSON_FILE_PATH);
+        $this->createTestJsonFile();
+        $this->file = new File(self::REAL_JSON_FILE_PATH);
+    }
+
+    protected function tearDown()
+    {
+        $this->deleteTestJsonFile();
+    }
+
+    protected function createTestJsonFile()
+    {
+        $data = <<<EOF
+{
+    "name": "T3ExtCli"
+}
+EOF;
+        file_put_contents(self::REAL_JSON_FILE_PATH, $data);
+    }
+
+    protected function deleteTestJsonFile()
+    {
+        if (is_file(self::REAL_JSON_FILE_PATH)) {
+            unlink(self::REAL_JSON_FILE_PATH);
+        }
     }
 
     public function testJsonPathWillBeApplied()
     {
-        $this->assertSame(self::VIRTUAL_JSON_FILE_PATH, $this->file->getPath());
+        $this->assertSame(self::REAL_JSON_FILE_PATH, $this->file->getPath());
+    }
+
+    public function testJsonFileExistsWillReturnFalseForVirtualJsonFile()
+    {
+        $file = new File(self::VIRTUAL_JSON_FILE_PATH);
+        $this->assertFalse($file->exists());
+    }
+
+    public function testJsonFileExistsWillReturnTrueForRealJsonFile()
+    {
+        $this->assertTrue($this->file->exists());
     }
 
 }
