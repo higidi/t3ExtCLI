@@ -57,4 +57,18 @@ class File
         return is_file($this->path);
     }
 
+    /**
+     * Reads the json file.
+     *
+     * @return null|mixed The json file data.
+     */
+    public function read()
+    {
+        if (!$this->exists()) {
+            return null;
+        }
+
+        return json_decode(file_get_contents($this->path), true);
+    }
+
 }

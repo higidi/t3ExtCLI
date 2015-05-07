@@ -68,4 +68,26 @@ EOF;
         $this->assertTrue($this->file->exists());
     }
 
+    public function testJsonFileReadWillReturnNullIfFileNotExists()
+    {
+        /** @var File|\PHPUnit_Framework_MockObject_MockObject $fileMock */
+        $fileMock = $this->getMock('T3ExtCli\Json\File', array('exists'), array(), '', false);
+        $fileMock->expects($this->once())
+            ->method('exists')
+            ->willReturn($this->returnValue(false));
+
+        $this->assertNull($fileMock->read());
+    }
+
+    public function testJsonFileReadWillReturnDecodedJson()
+    {
+        /** @var File|\PHPUnit_Framework_MockObject_MockObject $fileMock */
+        $fileMock = $this->getMock('T3ExtCli\Json\File', array('exists'), array(self::REAL_JSON_FILE_PATH));
+        $fileMock->expects($this->once())
+            ->method('exists')
+            ->willReturn($this->returnValue(true));
+
+        $this->assertSame(array('name' => 'T3ExtCli'), $fileMock->read());
+    }
+
 }
