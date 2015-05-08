@@ -88,4 +88,12 @@ EOF;
         $this->assertSame(array('name' => 'T3ExtCli'), $fileMock->read());
     }
 
+    public function testJsonFileWriteWillReturnTrueIfFileHasBeenWritten()
+    {
+        unlink(self::REAL_JSON_FILE_PATH);
+        $this->assertFalse(is_file(self::REAL_JSON_FILE_PATH));
+        $this->assertTrue($this->file->write(array('name' => 'T3ExtCli')));
+        $this->assertTrue(is_file(self::REAL_JSON_FILE_PATH));
+    }
+
 }

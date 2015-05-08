@@ -71,4 +71,15 @@ class File
         return json_decode(file_get_contents($this->path), true);
     }
 
+    /**
+     * Writes data to json file.
+     *
+     * @param array $data The json data to write.
+     * @return bool True if succeed, otherwise false.
+     */
+    public function write(array $data)
+    {
+        return file_put_contents($this->path, json_encode($data)) !== false ? true : false;
+    }
+
 }
