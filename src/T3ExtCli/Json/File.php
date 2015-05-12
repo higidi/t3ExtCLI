@@ -60,7 +60,7 @@ class File
     /**
      * Reads the json file.
      *
-     * @return null|mixed The json file data.
+     * @return null|array The json file data or null.
      */
     public function read()
     {
@@ -75,7 +75,7 @@ class File
      * Writes data to json file.
      *
      * @param array $data The json data to write.
-     * @return bool True if succeed, otherwise false.
+     * @return bool True if data has been written, otherwise false.
      */
     public function write(array $data)
     {
