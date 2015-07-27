@@ -2,9 +2,9 @@
 <?php
 
 // bootstraping
-require_once __DIR__.'/../src/bootstrap.php';
+require_once __DIR__.'/../bootstrap.php';
 
-use T3ExtCli\Application;
+use Higidi\T3ExtCli\Application;
 
 // create & run application
 $app = new Application();
