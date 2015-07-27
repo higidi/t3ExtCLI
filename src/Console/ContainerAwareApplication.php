@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli\Console;
+namespace Higidi\T3ExtCli\Console;
 
 use Cilex\Provider\Console\ContainerAwareApplication as BaseContainerAwareApplication;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputOption;
-use T3ExtCli\Command\ConfigCommand;
-use T3ExtCli\Command\Er\ListCommand;
-use T3ExtCli\Command\Er\ShowCommand;
-use T3ExtCli\Command\Er\DownloadCommand;
-use T3ExtCli\Command\Er\UploadCommand;
+use Higidi\T3ExtCli\Command\ConfigCommand;
+use Higidi\T3ExtCli\Command\Er\ListCommand;
+use Higidi\T3ExtCli\Command\Er\ShowCommand;
+use Higidi\T3ExtCli\Command\Er\DownloadCommand;
+use Higidi\T3ExtCli\Command\Er\UploadCommand;
 
 /**
  * The T3ExtCLI console application class.

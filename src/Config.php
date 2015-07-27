@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli;
+namespace Higidi\T3ExtCli;
 
 /**
  * The T3ExtCLI config class.

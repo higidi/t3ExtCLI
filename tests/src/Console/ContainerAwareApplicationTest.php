@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli\Test\Console;
+namespace Higidi\T3ExtCli\Test\Console;
 
-use T3ExtCli\Console\ContainerAwareApplication;
+use Higidi\T3ExtCli\Console\ContainerAwareApplication;
 
 class ContainerAwareApplicationTest extends \PHPUnit_Framework_TestCase
 {
@@ -28,22 +28,22 @@ class ContainerAwareApplicationTest extends \PHPUnit_Framework_TestCase
 
     public function testIfListCommandWillBeRegisteredWithApplication()
     {
-        $this->assertInstanceOf('T3ExtCli\Command\Er\ListCommand', $this->application->get('er:list'));
+        $this->assertInstanceOf('Higidi\T3ExtCli\Command\Er\ListCommand', $this->application->get('er:list'));
     }
 
     public function testIfShowCommandWillBeRegisteredWithApplication()
     {
-        $this->assertInstanceOf('T3ExtCli\Command\Er\ShowCommand', $this->application->get('er:show'));
+        $this->assertInstanceOf('Higidi\T3ExtCli\Command\Er\ShowCommand', $this->application->get('er:show'));
     }
 
     public function testIfDownloadCommandWillBeRegisteredWithApplication()
     {
-        $this->assertInstanceOf('T3ExtCli\Command\Er\DownloadCommand', $this->application->get('er:download'));
+        $this->assertInstanceOf('Higidi\T3ExtCli\Command\Er\DownloadCommand', $this->application->get('er:download'));
     }
 
     public function testIfUploadCommandWillBeRegisteredWithApplication()
     {
-        $this->assertInstanceOf('T3ExtCli\Command\Er\UploadCommand', $this->application->get('er:upload'));
+        $this->assertInstanceOf('Higidi\T3ExtCli\Command\Er\UploadCommand', $this->application->get('er:upload'));
     }
 
     public function testIfConfigFileDefaultOptionWillBeRegisteredWithApplication()

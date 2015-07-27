@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli\Json;
+namespace Higidi\T3ExtCli\Json;
 
 /**
  * Read/write json files.

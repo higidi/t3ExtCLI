@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli\Command;
+namespace Higidi\T3ExtCli\Command;
 
 use Cilex\Command\Command as BaseCommand;
 

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli\Test;
+namespace Higidi\T3ExtCli\Test;
 
 class ConfigTest extends \PHPUnit_Framework_TestCase
 {

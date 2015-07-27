@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli\Test\Ter\Repository;
+namespace Higidi\T3ExtCli\Test\Ter\Repository;
 
-use T3ExtCli\Ter\Repository\Mirror;
+use Higidi\T3ExtCli\Ter\Repository\Mirror;
 
 class MirrorTest extends \PHPUnit_Framework_TestCase
 {

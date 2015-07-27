@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli\Test\Json;
+namespace Higidi\T3ExtCli\Test\Json;
 
-use T3ExtCli\Json\File;
+use Higidi\T3ExtCli\Json\File;
 
 class FileTest extends \PHPUnit_Framework_TestCase
 {
@@ -71,7 +71,7 @@ EOF;
     public function testJsonFileReadWillReturnNullIfFileNotExists()
     {
         /** @var File|\PHPUnit_Framework_MockObject_MockObject $fileMock */
-        $fileMock = $this->getMock('T3ExtCli\Json\File', array('exists'), array(), '', false);
+        $fileMock = $this->getMock('Higidi\T3ExtCli\Json\File', array('exists'), array(), '', false);
         $fileMock->method('exists')
             ->willReturn(false);
 
@@ -81,7 +81,7 @@ EOF;
     public function testJsonFileReadWillReturnDecodedJson()
     {
         /** @var File|\PHPUnit_Framework_MockObject_MockObject $fileMock */
-        $fileMock = $this->getMock('T3ExtCli\Json\File', array('exists'), array(self::REAL_JSON_FILE_PATH));
+        $fileMock = $this->getMock('Higidi\T3ExtCli\Json\File', array('exists'), array(self::REAL_JSON_FILE_PATH));
         $fileMock->method('exists')
             ->willReturn($this->returnValue(true));
 

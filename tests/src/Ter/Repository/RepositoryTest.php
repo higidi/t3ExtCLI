@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli\Test\Command\Ter\Repository;
+namespace Higidi\T3ExtCli\Test\Command\Ter\Repository;
 
-use T3ExtCli\Ter\Repository\Repository;
+use Higidi\T3ExtCli\Ter\Repository\Repository;
 
 class RepositoryTest extends \PHPUnit_Framework_TestCase
 {

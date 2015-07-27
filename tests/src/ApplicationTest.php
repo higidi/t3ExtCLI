@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli\Test;
+namespace Higidi\T3ExtCli\Test;
 
-use T3ExtCli\Application;
+use Higidi\T3ExtCli\Application;
 
 class ApplicationTest extends \PHPUnit_Framework_TestCase
 {
@@ -38,12 +38,12 @@ class ApplicationTest extends \PHPUnit_Framework_TestCase
 
     public function testApplicationClassWillBeApplied()
     {
-        $this->assertSame('T3ExtCli\Console\ContainerAwareApplication', $this->application['console.class']);
+        $this->assertSame('Higidi\T3ExtCli\Console\ContainerAwareApplication', $this->application['console.class']);
     }
 
     public function testApplicationWillBeInstanceOfT3ExtCliConsoleApplication()
     {
-        $this->assertInstanceOf('T3ExtCli\Console\ContainerAwareApplication', $this->application['console']);
+        $this->assertInstanceOf('Higidi\T3ExtCli\Console\ContainerAwareApplication', $this->application['console']);
     }
 
 }

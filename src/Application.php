@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli;
+namespace Higidi\T3ExtCli;
 
 use Cilex\Application as BaseApplication;
 
@@ -52,7 +52,7 @@ class Application extends BaseApplication
     protected function getDefaultValues()
     {
         return array(
-            'console.class' => 'T3ExtCli\Console\ContainerAwareApplication',
+            'console.class' => 'Higidi\T3ExtCli\Console\ContainerAwareApplication',
         );
     }
 

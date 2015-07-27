@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli\Ter\Repository;
+namespace Higidi\T3ExtCli\Ter\Repository;
 
 /**
  * TER model class

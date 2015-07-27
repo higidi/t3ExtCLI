@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace T3ExtCli\Utility;
+namespace Higidi\T3ExtCli\Utility;
 
 /**
  * Class EnvironmentUtility.

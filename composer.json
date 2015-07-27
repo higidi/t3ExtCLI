@@ -40,12 +40,12 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "T3ExtCli\\": "src/"
+      "Higidi\\T3ExtCli\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "T3ExtCli\\Test\\": "tests/src/"
+      "Higidi\\T3ExtCli\\Test\\": "tests/src/"
     }
   },
   "require-dev": {
