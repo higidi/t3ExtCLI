@@ -39,13 +39,13 @@
   },
   "minimum-stability": "stable",
   "autoload": {
-    "psr-0": {
-      "T3ExtCli": "src/"
+    "psr-4": {
+      "T3ExtCli\\": "src/"
     }
   },
   "autoload-dev": {
-    "psr-0": {
-      "T3ExtCli\\Test": "tests/src/"
+    "psr-4": {
+      "T3ExtCli\\Test\\": "tests/src/"
     }
   },
   "require-dev": {
